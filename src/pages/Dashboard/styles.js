@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background: #172b4d;
-  flex: 1;
-  height: 100vh;
+
+  padding-bottom: 58px;
 `;
 export const Header = styled.div`
-  background: ${props => props.cor};
+  background: #0a1b36;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   height: 11%;
   display: flex;
@@ -17,13 +17,28 @@ export const Body = styled.div`
   padding: 0 25px;
   padding-top: 50px;
   height: 89%;
-  padding-bottom: 26.8rem !important;
 `;
 export const MenuBox = styled.div`
   display: flex;
   align-items: center;
 `;
-export const LogoBox = styled.div``;
+export const LogoBox = styled.div`
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  width: 170px;
+  cursor: pointer;
+`;
+export const Logo = styled.img`
+  width: 55px;
+  margin-right: 5px;
+`;
+export const LogoName = styled.span`
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+`;
 export const DashboardMenu = styled.div`
   display: grid;
   grid-template-areas: "um dois tres quatro";
@@ -133,4 +148,54 @@ export const ItemIcon = styled.div`
 export const AuthIcon = styled.i`
   margin-right: 10px;
   color: ${props => props.cor};
+`;
+export const DropdownBox = styled.a`
+  text-decoration: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const DropdownFather = styled.div`
+  border: 1px solid ${props => props.borderColor};
+  background: ${props => props.bgColor} !important;
+`;
+export const DropdownText = styled.span`
+  color: ${props => props.color};
+  font-size: 14px;
+  padding-top: 10px;
+  font-weight: bold;
+`;
+export const DashboardCash = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+  height: 400px;
+`;
+export const CashMenu = styled.div`
+  display: flex;
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(87deg, #2dce89 0, #2dcecc 100%);
+`;
+export const CalculatorBox = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #8898aa;
+  font-weight: bold;
+  @media (max-width: 668px) {
+    & {
+      order: 1;
+    }
+  }
 `;
